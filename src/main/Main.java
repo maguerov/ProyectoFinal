@@ -27,6 +27,10 @@ public class Main {
         System.out.println("prueba");
     }
 
+    public void prueba2(){
+        System.out.println("prueba de Marlon");
+    }
+
     private static int showMainMenu() {
 
         printer("Menú principal");
