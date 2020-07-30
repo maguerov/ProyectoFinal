@@ -5,7 +5,7 @@ import controller.Controller;
 import java.util.Scanner;
 
 public class Main {
-
+    //no me borre el comentario
     private static Scanner scan = new Scanner(System.in);
     public static Controller c = new Controller();
 
