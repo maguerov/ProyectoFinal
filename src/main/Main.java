@@ -8,6 +8,8 @@ public class Main {
     //no me borre el comentario
 
     //yo borro lo que me de la gana
+
+    //Otro comentario que me pidio Tray
     private static Scanner scan = new Scanner(System.in);
     public static Controller c = new Controller();
 
