@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     //no me borre el comentario
+
+    //yo borro lo que me de la gana
     private static Scanner scan = new Scanner(System.in);
     public static Controller c = new Controller();
 
