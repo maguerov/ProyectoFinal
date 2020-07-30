@@ -23,6 +23,9 @@ public class Main {
         } while (option !=5 );
 
     }
+    public void prueba(){
+        System.out.println("prueba");
+    }
 
     private static int showMainMenu() {
 
