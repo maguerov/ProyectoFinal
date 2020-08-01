@@ -23,13 +23,7 @@ public class Main {
         } while (option !=5 );
 
     }
-    public void prueba(){
-        System.out.println("prueba");
-    }
 
-    public void prueba2(){
-        System.out.println("prueba de Marlon");
-    }
 
     private static int showMainMenu() {
 
@@ -37,8 +31,7 @@ public class Main {
         printer("Seleccione una opción");
         printer("1. Lanzar dados");
         printer("2. Invocar tropas");
-        printer("3. Realizar movimientos");
-        printer("4. Realizar ataques");
+        printer("3. Realizar acciones (movimientos o ataques)");
         printer("5. Salir");
 
         return scan.nextInt();
@@ -53,10 +46,7 @@ public class Main {
                summonTroopsMenu();
                 break;
             case 3:
-              //TO DO Menu movement
-                break;
-            case 4:
-                //TO DO Menu attacks
+              actionsMenu();
                 break;
             case 5:
                 printer("Gracias por usar el sistema");
@@ -77,6 +67,18 @@ public class Main {
 
         c.summonUnitMain(option);
     }
+
+    public static void actionsMenu() {
+        printer(c.countAttackDices());
+        printer("Seleccione el tipo de acción a utilizar:");
+        printer("1. Ataque");
+        printer("2. Ataque Especial");
+        printer("3. Movimineto");
+        int option = scan.nextInt();
+
+        c.performActionMain(option);
+    }
+
 
     public static void printer(String pData) {
         System.out.println(pData);
